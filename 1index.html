@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>R P S</title>
+    <link rel="icon" type="image/png" href="schere-stein-papier.png" />
+  </head>
+  <body class="md:container mx-auto font-sans bg-slate-600 p-2">
+    <h1
+      class="md:container mx-auto flex justify-center items-center bg-slate-400 text-wrap text-xl text-white font-extrabold p-2"
+    >
+      Rock, Paper & Scissors
+      <img
+        class="flex pl-4"
+        src="schere-stein-papier.png"
+        alt="illustration rock"
+        width="50"
+        height="50"
+      />
+    </h1>
+
+    <section
+      class="md:container mx-auto flex justify-around p-6 flex-wrap bg-slate-300"
+    >
+      <a href="#"
+        ><button
+          onclick="spielen('rock')"
+          class="flex rounded-full border-4 border-slate-500 bg-slate-400 text-white text-base px-6 py-4 font-semibold hover:bg-slate-600 hover:text-white"
+        >
+          Rock
+          <img
+            src="stein.png"
+            alt="illustration rock"
+            width="50"
+            height="50"
+          /></button
+      ></a>
+      <br />
+      <a href="#"
+        ><button
+          onclick="spielen('paper')"
+          class="flex rounded-full border-4 border-slate-500 bg-slate-400 text-white text-base px-6 py-4 font-semibold hover:bg-slate-600 hover:text-white"
+        >
+          Paper
+          <img
+            src="zerknittertes-papier.png"
+            alt="illustration paper"
+            width="50"
+            height="50"
+          /></button
+      ></a>
+      <br />
+      <a href="#"
+        ><button
+          onclick="spielen('scissors')"
+          class="flex rounded-full border-4 border-slate-500 bg-slate-400 text-white text-base px-6 py-4 font-semibold hover:bg-slate-600 hover:text-white"
+        >
+          Scissors
+          <img
+            src="schere.png"
+            alt="illustration scissors"
+            width="50"
+            height="50"
+          /></button
+      ></a>
+      <br />
+      <p
+        id="ergebnis"
+        class="flex text-white font-bold px-6 py-4 border-4 border-slate-500 bg-slate-400"
+      >
+        You: 0 / Robot: 0
+      </p>
+      <br />
+      <div class="md:container mx-auto justify-center p-4">
+        <p
+          id="ausgabe"
+          class="flex justify-center rounded-full border-4 border-slate-400 bg-slate-600 font-bold text-white rounded"
+        >
+          Click a Button and have fun!
+        </p>
+      </div>
+    </section>
+
+    <script src="1script.js"></script>
+  </body>
+</html>
